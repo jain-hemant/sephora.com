@@ -1,7 +1,49 @@
-import React from 'react'
-
-export default function FooterLink() {
-    return (
-        <div>FooterLink</div>
-    )
+function FooterLink() {
+    const footerMenus = {
+        aboutSephora: [
+            { menuName: "About Sephora", route: "/aboutSephora", },
+            { menuName: "News Room", route: "/newsRoom", },
+            { menuName: "Careers", route: "/carrers", },
+            { menuName: "Sephora Values", route: "/sephoraValues", },
+            { menuName: "Supply Chain Transparacy", route: "/supplyChain", },
+            { menuName: "Affiliates", route: "/affiliates", },
+            { menuName: "Sephora Events", route: "/sephoraEvents", },
+            { menuName: "Gift Card", route: "/giftCard", },
+            { menuName: "Sephora Global Sites", route: "/sephoraGlobal", },
+            { menuName: "Diversity, Equity & Inclusion", route: "/diversityEqiuty", },
+            { menuName: "Sephora Accelerate", route: "/sephoraAccelerate", },
+            { menuName: "Beauty (Re)Purposed", route: "/beautyRepurposed", },
+            { menuName: "Reaport a Vulnerbility", route: "/report", },
+        ],
+        mySephora: [
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+        ],
+        help: [
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+        ],
+        Regionlanguage: [
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+            { menuName: "", route: "/", },
+        ],
+        newsLetter: [{},],
+    }
 }
