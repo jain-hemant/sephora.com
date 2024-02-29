@@ -1,4 +1,4 @@
-import { Button, Flex, FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from '@chakra-ui/react'
+import { Button, Flex, FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text } from '@chakra-ui/react'
 import React from 'react'
 
 export default function LoginModal({ isOpen, onClose }) {
@@ -15,17 +15,18 @@ export default function LoginModal({ isOpen, onClose }) {
             >
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>Create your account</ModalHeader>
+                    <ModalHeader>Sign In</ModalHeader>
+                    <Text>Sign in or create an account to enjoy FREE standard shipping on all orders.</Text>
                     <ModalCloseButton />
                     <ModalBody pb={6}>
                         <FormControl>
-                            <FormLabel>First name</FormLabel>
-                            <Input ref={initialRef} placeholder='First name' />
+                            {/* <FormLabel>First name</FormLabel> */}
+                            <Input ref={initialRef} placeholder='Email Address' />
                         </FormControl>
 
                         <FormControl mt={4}>
-                            <FormLabel>Last name</FormLabel>
-                            <Input placeholder='Last name' />
+                            {/* <FormLabel>Last name</FormLabel> */}
+                            <Input type='password' placeholder='Password' />
                         </FormControl>
                     </ModalBody>
 
