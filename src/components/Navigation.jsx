@@ -9,13 +9,13 @@ export default function Navigation() {
     { name: "Mini Size", route: "/miniSize" }, { name: "Gift & Gift Card", route: "/giftGiftCard" },
     { name: "Beauty under $20", route: "/beautyUnder20" }, { name: "Sales & Offers", route: "/salesOffer" }]
     return (
-        <Flex border={'1px solid black'} >
+        <Flex bg={'black'} color={'white'} >
             <NavigationArgs menus={menus} />
         </Flex>
     )
 }
 function NavigationArgs({ menus }) {
-    return <Flex >
+    return <Flex w={'100%'} justifyContent={'space-between'} >
         {
             menus.map((menu, index) => {
                 return <Box key={index} justifyContent={"space-evenly"} p={"10px"}>
