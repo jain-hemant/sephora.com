@@ -1,42 +1,42 @@
 export const bannerImage = {
     headerBanner: [
         {
-            image: "../../public/image/headerBanner/img1BerryOnBarray.avif",
+            image: "/image/headerBanner/img1BerryOnBarray.avif",
             title: "Berry on Berry",
             description: "Double down on a matching lip and cheek. It wins every time.",
             urlName: "Shop Now",
             url: "#"
         },
         {
-            image: "../../public/image/headerBanner/img2MauveOnMauve.avif",
+            image: "/image/headerBanner/img2MauveOnMauve.avif",
             title: "Mauve on Mauve",
             description: "Play up lips and cheeks with a wash of color",
             urlName: "Shop Now",
             url: "#"
         },
         {
-            image: "../../public/image/headerBanner/img3pinkOnPink.avif",
+            image: "/image/headerBanner/img3pinkOnPink.avif",
             title: "Pink on Pink",
             description: "Make this lip-and-cheek look your whole personality.",
             urlName: "Shop Now",
             url: "#"
         },
         {
-            image: "../../public/image/headerBanner/img4BestSellingBeauty.avif",
+            image: "/image/headerBanner/img4BestSellingBeauty.avif",
             title: "Bestfselling Beauty",
             description: "These fan-favorites are worth the hype.",
             urlName: "Shop Now",
             url: "#"
         },
         {
-            image: "../../public/image/headerBanner/img5NewMakeup.avif",
+            image: "/image/headerBanner/img5NewMakeup.avif",
             title: "New MAKEUP FOR EVER",
             description: "HD Skin Hydra Foundation.",
             urlName: "Shop Now",
             url: "#"
         },
         {
-            image: "../../public/image/headerBanner/img6KosasBB.avif",
+            image: "/image/headerBanner/img6KosasBB.avif",
             title: "New Kosas BB Burst Tintd Gel Cream",
             description: "HD Skin Hydra Foundation.",
             urlName: "Shop Now",
@@ -45,21 +45,21 @@ export const bannerImage = {
     ],
     middleBanner: [
         {
-            image: "../../public/image/middleBanner/img1FightDamage.avif",
+            image: "/image/middleBanner/img1FightDamage.avif",
             title: "Fight Damage with New Kerastase Premiere",
             description: "Visible restore 99% of hair's original strength.",
             urlName: "Shop Now",
             url: "#"
         },
         {
-            image: "../../public/image/middleBanner/img2NeedToKnow.avif",
+            image: "/image/middleBanner/img2NeedToKnow.avif",
             title: "The Need-to-Know",
             description: "Discover new and exclusive hair care from PATTERN by Tracee Ellis Ross.",
             urlName: "SNAP IT UP",
             url: "#"
         },
         {
-            image: "../../public/image/middleBanner/img3HotOnSocial.avif",
+            image: "/image/middleBanner/img3HotOnSocial.avif",
             title: "Hot on Social",
             description: "On-trend skincare picks all over your #FYP.",
             urlName: "Shop Now",
@@ -68,21 +68,21 @@ export const bannerImage = {
     ],
     footerBanner: [
         {
-            image: "../../public/image/footerBanner/img1NeedToKnow.avif",
+            image: "/image/footerBanner/img1NeedToKnow.avif",
             title: "the Need-to-Know",
             description: "hop game-changing hair care from adwoa beauty, RIES, and BREAD BEAUTY SUPPLY.",
             urlName: "SNAP THEM UP",
             url: "#"
         },
         {
-            image: "../../public/image/footerBanner/img2BeautyOnDemand.webp",
+            image: "/image/footerBanner/img2BeautyOnDemand.webp",
             title: "Beauty on Demand",
             description: "Fast and easy options that work for you.",
             urlName: "LEARN MORE",
             url: "#"
         },
         {
-            image: "../../public/image/footerBanner/img3AutoReplenish.avif",
+            image: "/image/footerBanner/img3AutoReplenish.avif",
             title: "Save with Auto-Replenish",
             description: "Get 5% off subscription deliveries and bever run out of your go-tos again.",
             urlName: "Shop Now",
