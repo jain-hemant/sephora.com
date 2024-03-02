@@ -65,6 +65,14 @@ export const bannerImage = {
             urlName: "Shop Now",
             url: "#"
         },
+        {
+            image: "/image/middleBanner/img1FightDamage.avif",
+            title: "Fight Damage with New Kerastase Premiere",
+            description: "Visible restore 99% of hair's original strength.",
+            urlName: "Shop Now",
+            url: "#"
+        },
+
     ],
     footerBanner: [
         {
@@ -86,6 +94,13 @@ export const bannerImage = {
             title: "Save with Auto-Replenish",
             description: "Get 5% off subscription deliveries and bever run out of your go-tos again.",
             urlName: "Shop Now",
+            url: "#"
+        },
+        {
+            image: "/image/footerBanner/img2BeautyOnDemand.webp",
+            title: "Beauty on Demand",
+            description: "Fast and easy options that work for you.",
+            urlName: "LEARN MORE",
             url: "#"
         },
     ]
