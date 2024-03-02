@@ -1,10 +1,12 @@
-import { Box, Flex, Input, InputGroup, InputLeftElement, Text, useDisclosure } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Input, InputGroup, InputLeftElement, Text } from '@chakra-ui/react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import LoginModal from '../modal/LoginModal'
+import { AppContext } from '../context/AppContext'
 
 export default function Header() {
-    const { isOpen, onClose, onOpen } = useDisclosure()
+    const { isLoginModalOpen, onLoginModalOpen, onLoginModalClose } = useContext(AppContext);
+
     return (
         <>
             <Flex justifyContent={"space-between"} gap={"10px"} alignItems={"center"} lineHeight={"40px"} padding={"10px 10px"}>
@@ -20,7 +22,7 @@ export default function Header() {
                 <Flex w={"35%"} justify={'space-between'} >
                     <Link>Store & Service</Link>
                     <Link>Community</Link>
-                    <Link onClick={onOpen}>Sign In</Link>
+                    <Link onClick={onLoginModalOpen}>Sign In</Link>
                 </Flex>
                 <Flex w={"15%"} justify={'space-evenly'} >
                     <Box>Like</Box>
@@ -28,7 +30,7 @@ export default function Header() {
                 </Flex>
 
             </Flex>
-            <LoginModal onClose={onClose} isOpen={isOpen} />
+            <LoginModal onClose={onLoginModalClose} isOpen={isLoginModalOpen} />
         </>
     )
 }

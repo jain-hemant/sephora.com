@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../context/AppContext';
+import { Button, Flex, FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from '@chakra-ui/react';
 
 export default function SignupModal() {
+    const { isSignupModalIsopen, onSignupModalClose, onLoginModalClose } = useContext(AppContext);
+    const initialRef = React.useRef(null)
+    const finalRef = React.useRef(null)
+
     return (
         <Flex>
             <Modal
                 initialFocusRef={initialRef}
                 finalFocusRef={finalRef}
-                isOpen={isOpen}
-                onClose={onClose}
+                isOpen={isSignupModalIsopen}
+                onClose={onSignupModalClose}
             >
                 <ModalOverlay />
                 <ModalContent>
@@ -29,7 +35,7 @@ export default function SignupModal() {
                         <Button colorScheme='blue' mr={3}>
                             Save
                         </Button>
-                        <Button onClick={onClose}>Cancel</Button>
+                        <Button onClick={onSignupModalClose}>Cancel</Button>
                     </ModalFooter>
                 </ModalContent>
             </Modal>
