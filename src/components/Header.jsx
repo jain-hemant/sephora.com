@@ -11,7 +11,11 @@ export default function Header() {
         <>
             <Flex justifyContent={"space-between"} gap={"10px"} alignItems={"center"} lineHeight={"40px"} padding={"10px 10px"}>
                 <Flex w={"50%"} justify={'space-evenly'}>
-                    <Text fontSize={[18, 28]} fontWeight={'2xl'}>SEPHORA</Text>
+                    <Text fontSize={[18, 28]} fontWeight={'2xl'}>
+                        <Link to={"/"}>
+                            SEPHORA
+                        </Link>
+                    </Text>
                     <InputGroup width={"70%"}>
                         <InputLeftElement pointerEvents='none'>
                             {/* <PhoneIcon color='gray.300' /> */}
