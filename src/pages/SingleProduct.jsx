@@ -37,21 +37,21 @@ export default function SingleProduct() {
                     </Flex>
                     <Flex w={'100%'}>
                         <Text>Highly rated by customer for: </Text>
-                        <Link to={"#"}>satisfiction</Link>
-                        <Link to={"#"}>smell</Link>
-                        <Link to={"#"}>color</Link>
+                        <Link to={"#"}> satisfiction </Link>
+                        <Link to={"#"}> smell </Link>
+                        <Link to={"#"}> color </Link>
 
                     </Flex>
                 </VStack>
                 <Text>Price : {product.price_sign || '$'} {product.price}</Text>
                 <Text>Color : {product?.product_colors?.[0]?.colour_name}</Text>
                 <Box>
-                    <Text>Standard size</Text>
+                    <Text>Standard size : {Math.floor(Math.random() * (100 - 10) + 10)}gm</Text>
                     <Flex>
                         {
                             product?.product_colors?.map((color, index) => {
                                 // console.log(color?.hax_value);
-                                return <Box key={index} bg={color.hex_value} width={"40px"} height={'40px'} m={'2px'}>
+                                return <Box key={index} bg={color.hex_value} width={"40px"} height={'40px'} m={'2px'} cursor={'pointer'}>
                                 </Box>
                             })
                         }

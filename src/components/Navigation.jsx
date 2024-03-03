@@ -15,11 +15,11 @@ export default function Navigation() {
     )
 }
 function NavigationArgs({ menus }) {
-    return <Flex w={'100%'} justifyContent={'space-between'} >
+    return <Flex w={'80%'} justifyContent={'space-between'} margin={'auto'} >
         {
             menus.map((menu, index) => {
                 return <Box key={index} justifyContent={"space-evenly"} p={"10px"}>
-                    <Link href={menu.route} >{menu.name}</Link>
+                    <Link href={menu.route} fontSize={[12, 12, 14]} >{menu.name}</Link>
                 </Box>
             })
         }

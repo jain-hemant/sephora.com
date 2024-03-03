@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ApiContext } from '../../context/ApiContext'
-import { Box, Flex, Progress } from '@chakra-ui/react'
+import { Box, Flex, Progress, Spinner } from '@chakra-ui/react'
 import ProductCard from './ProductCard'
 
 export default function ProductsSlideCard({ type }) {
@@ -28,8 +28,17 @@ export default function ProductsSlideCard({ type }) {
         )
     } else {
         return (
-            <Box minW={"400px"} minH={"200px"} p={"0px 2px"}>
-                <Progress size='xs' isIndeterminate />
+            <Box minW={"400px"} minH={"200px"} p={"0px 2px"} position={'relative'} >
+                <Spinner
+                    thickness='4px'
+                    speed='0.65s'
+                    emptyColor='gray.200'
+                    color='blue.500'
+                    size='xl'
+                    position={'absolute'}
+                    top={'35%'}
+                    left={'40%'}
+                />
             </Box>
         )
     }

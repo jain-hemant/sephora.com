@@ -10,7 +10,7 @@ import { GrAppsRounded } from "react-icons/gr";
 
 export default function FooterCommunicate() {
     return (
-        <Flex w={"100%"} justify={'space-evenly'}>
+        <Flex w={"80%"} justify={'space-evenly'} py={'20px'}>
             <Flex alignItems={'center'} gap={'10px'}>
                 <FaMapLocationDot size={'24px'} />
                 <Box>

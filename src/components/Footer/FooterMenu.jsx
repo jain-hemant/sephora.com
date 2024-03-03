@@ -7,7 +7,7 @@ import { SiAircanada } from "react-icons/si";
 
 export default function FooterMenu() {
     return (
-        <SimpleGrid w={"100%"} p={"10px"} columns={[6]} spacing={"0"} >
+        <SimpleGrid w={"80%"} p={"10px"} columns={[6]} spacing={"0"} >
 
             <VStack gridColumnStart={1} gridColumnEnd={2} align={"left"} >
                 {

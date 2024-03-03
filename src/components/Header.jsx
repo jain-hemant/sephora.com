@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import LoginModal from '../modal/LoginModal'
 import { AppContext } from '../context/AppContext'
+import { IoSearchOutline } from "react-icons/io5";
 
 export default function Header() {
     const { isLoginModalOpen, onLoginModalOpen, onLoginModalClose } = useContext(AppContext);
@@ -18,9 +19,10 @@ export default function Header() {
                     </Text>
                     <InputGroup width={"70%"}>
                         <InputLeftElement pointerEvents='none'>
-                            {/* <PhoneIcon color='gray.300' /> */}
+                            {<IoSearchOutline />
+                            }
                         </InputLeftElement>
-                        <Input type='tel' placeholder='Phone number' borderRadius={'20px'} border={'1px solid black'} />
+                        <Input type='tel' placeholder='Search...' borderRadius={'20px'} border={'1px solid black'} />
                     </InputGroup>
                 </Flex>
                 <Flex w={"35%"} justify={'space-between'} >
