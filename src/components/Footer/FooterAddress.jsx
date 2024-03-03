@@ -9,7 +9,7 @@ import { FaSnapchat } from "react-icons/fa6";
 import { PiTiktokLogo } from "react-icons/pi";
 export default function FooterAddress() {
     return (
-        <Flex >
+        <Flex w={'100%'} margin={"20px 0px"} justifyContent={'space-between'} alignItems={'center'}>
             <VStack align={"left"}>
                 <Box >
                     <Text>© 2024 Sephora USA, Inc. All rights reserved.</Text>

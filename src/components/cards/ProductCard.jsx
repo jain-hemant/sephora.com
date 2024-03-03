@@ -22,13 +22,13 @@ export default function ProductCard({ product }) {
         }
     }, [product])
     return (
-        isVisible && <Box minW={"180px"} minH={"200px"} p={"5px 10px"} margin={"3px 10px"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
+        isVisible && <Box minW={"180px"} minH={"128px"} p={"5px 10px"} margin={"3px 5px"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}>
             <Link to={`/products/${product.id}`}>
                 <Image src={product.image_link} />
                 <Text>{product.brand}</Text>
-                <Text fontSize={[10, 10, 12]} sx={{ wordWrap: 'normal' }} >{product.name}</Text>
+                <Text fontSize={[10, 10, 12]} sx={{ textWrap: "wrap" }} >{product.name}</Text>
                 {/* <Text>{ }</Text> */}
-                <Text>{product.price_sign} {product.price}</Text>
+                <Text>{product.price_sign || "$"} {product.price}</Text>
             </Link>
 
         </Box>)

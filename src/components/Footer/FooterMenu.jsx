@@ -1,4 +1,4 @@
-import { SimpleGrid, Box, VStack, Text, FormLabel, Input, Button, Spacer, Flex } from '@chakra-ui/react'
+import { SimpleGrid, Box, VStack, Text, FormLabel, Input, Button, Spacer, Flex, HStack } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 import React from 'react'
 import footerMenuLink from './footerMenuLink.js'

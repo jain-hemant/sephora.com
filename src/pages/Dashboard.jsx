@@ -18,7 +18,6 @@ export default function Dashboard() {
             <ProductsSlideCard type={'blush'} />
             <DashboardBanner banner={bannerImage.footerBanner} />
             <ProductsSlideCard type={'foundation'} />
-            <Button onClick={handleClick}>Api Test</Button>
         </VStack>
 
     )
