@@ -29,25 +29,25 @@ export default function FooterAddress() {
 
             <Flex gap={'20px'}>
                 <Link>
-                    <SlSocialInstagram />
+                    <SlSocialInstagram size={'24px'} />
                 </Link>
                 <Link>
-                    <FaSquareFacebook />
+                    <FaSquareFacebook size={'24px'} />
                 </Link>
                 <Link>
-                    <FaSquareXTwitter />
+                    <FaSquareXTwitter size={'24px'} />
                 </Link>
                 <Link>
-                    <ImYoutube2 />
+                    <ImYoutube2 size={'24px'} />
                 </Link>
                 <Link>
-                    <FaPinterest />
+                    <FaPinterest size={'24px'} />
                 </Link>
                 <Link>
-                    <FaSnapchat />
+                    <FaSnapchat size={'24px'} />
                 </Link>
                 <Link>
-                    <PiTiktokLogo />
+                    <PiTiktokLogo size={'24px'} />
                 </Link>
             </Flex>
         </Flex>

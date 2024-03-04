@@ -19,7 +19,7 @@ function NavigationArgs({ menus }) {
         {
             menus.map((menu, index) => {
                 return <Box key={index} justifyContent={"space-evenly"} p={"10px"}>
-                    <Link href={menu.route} fontSize={[12, 12, 14]} >{menu.name}</Link>
+                    <Link href={menu.route} fontSize={[10, 10, 12]} >{menu.name}</Link>
                 </Box>
             })
         }

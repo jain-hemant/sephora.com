@@ -7,7 +7,7 @@ import { SiAircanada } from "react-icons/si";
 
 export default function FooterMenu() {
     return (
-        <SimpleGrid w={"80%"} p={"10px"} columns={[6]} spacing={"0"} >
+        <SimpleGrid w={"80%"} p={"10px"} columns={[6]} spacing={"0"} minH={'fit-content'} >
 
             <VStack gridColumnStart={1} gridColumnEnd={2} align={"left"} >
                 {
@@ -46,27 +46,30 @@ export default function FooterMenu() {
 
             </VStack>
             <VStack gridColumnStart={[1, 1, 1, 5]} gridColumnEnd={[2, 2, 2, 7]} align={'left'}>
-                <Box>
-                    <Text>We Belong to
-                        Something Beautiful
-                    </Text>
-                </Box>
-                <Box>
+                <Flex h={'100%'} flexDirection={'column'} justifyContent={'space-between'}>
                     <Box>
-                        <Text>Sign up for Sephora text updates</Text> <br />
-                        <Flex>
-                            <Input type='text' placeholder='Mobile Phone Number' />
-                            <Button >Continue</Button>
-                        </Flex>
+                        <Text fontSize={[18, 20, 22]}>We Belong to
+                            Something Beautiful
+                        </Text>
                     </Box>
-                    <Box>
-                        <Text>Sign up for Sephora Emails</Text> <br />
-                        <Flex>
-                            <Input type='text' placeholder='Enter Your Email Address' />
-                            <Button >Signup</Button>
+
+                    <Flex flexDirection={'column'} gap={'20px'} justifyContent={'space-around'} >
+                        <Flex flexDirection={'column'} gap={'10px'}>
+                            <Text fontSize={[10, 10, 12]}>Sign up for Sephora text updates</Text>
+                            <Flex gap={'10px'}>
+                                <Input type='text' placeholder='Mobile Phone Number' bg='white' color={'black'} />
+                                <Button colorScheme='black' px={'30px'} fontSize={'12px'} border={'1px solid white'} borderRadius={'30px'} >Continue</Button>
+                            </Flex>
                         </Flex>
-                    </Box>
-                </Box>
+                        <Flex flexDirection={'column'} gap={'10px'} >
+                            <Text fontSize={[10, 10, 12]}>Sign up for Sephora Emails</Text>
+                            <Flex gap={'10px'}>
+                                <Input type='text' placeholder='Enter Your Email Address' bg='white' color={'black'} />
+                                <Button colorScheme='black' px={'30px'} fontSize={'12px'} border={'1px solid white'} borderRadius={'30px'} >Sign up</Button>
+                            </Flex>
+                        </Flex>
+                    </Flex>
+                </Flex>
             </VStack>
         </SimpleGrid >
     )
